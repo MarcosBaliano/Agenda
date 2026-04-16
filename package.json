@@ -1,0 +1,12 @@
+{
+  "name": "agenda-mvc",
+  "version": "1.0.0",
+  "description": "Agenda de Contatos MVC",
+  "main": "main.mjs",
+  "type": "module",
+  "scripts": {
+    "start": "node main.mjs"
+  },
+  "author": "Marcos Baliano",
+  "license": "ISC"
+}

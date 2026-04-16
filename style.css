@@ -1,0 +1,108 @@
+/* Variáveis para facilitar a manutenção de cores */
+:root {
+    --primary: #4361ee;
+    --success: #4cc9f0;
+    --danger: #ef233c;
+    --background: #f8f9fa;
+    --text-main: #2b2d42;
+    --card-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text-main);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Navbar mais moderna */
+.navbar {
+    background-color: #ffffff !important;
+    border-bottom: 1px solid #e9ecef;
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    color: var(--primary) !important;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+/* Cartões (Cards) com elevação */
+.card {
+    border: none;
+    border-radius: 16px;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header {
+    background-color: transparent !important;
+    border-bottom: 1px solid #f1f3f5;
+    font-weight: 700;
+    padding: 1.25rem;
+    color: var(--primary);
+}
+
+/* Inputs do formulário */
+.form-control {
+    border-radius: 10px;
+    padding: 0.6rem 1rem;
+    border: 2px solid #e9ecef;
+    transition: all 0.2s;
+}
+
+.form-control:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 4px rgba(67, 97, 238, 0.1);
+}
+
+/* Botões personalizados */
+.btn-primary {
+    background-color: var(--primary);
+    border: none;
+    border-radius: 10px;
+    padding: 0.6rem 1.5rem;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #3046c9;
+    box-shadow: 0 4px 12px rgba(67, 97, 238, 0.3);
+}
+
+/* Tabela de contatos */
+.table {
+    margin-bottom: 0;
+}
+
+.table thead th {
+    background-color: #f8f9fa;
+    border-bottom: none;
+    color: #6c757d;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
+.table tbody td {
+    vertical-align: middle;
+    padding: 1rem;
+    border-color: #f1f3f5;
+}
+
+/* Alerta flutuante no canto da tela */
+#alerta {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1050;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    border: none;
+}
